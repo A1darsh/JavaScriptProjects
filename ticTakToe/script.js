@@ -57,7 +57,12 @@ function disable(){
 }
 
 function showWinner(p1){
-    winMag.innerText = `Congratulations winner is ${p1}`;
+    if(p1==="X"){
+        winMag.innerText = `Congratulations winner is X`;
+    }else{
+        winMag.innerText = `Congratulations winner is O`;
+    }
+    
     msgContainer.classList.remove("hide");
     disable();
 }
