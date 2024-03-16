@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(4, 65, 44);
+    text-align: center;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 1);
+    height: 6vh; 
+}
+
+.navItems{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 200px; 
+}
+
+.first{
+    margin-right: auto;
+    color: rgb(240, 209, 7);
+}
+
+.last {
+    margin-right: 100px; 
+    margin-left: 0;
+    background-color: rgb(83, 63, 3);
+    columns: white;
+}
+
+.navItems.input {
+    margin-right: 3px; 
+}
+
+.container{
+    height: 70vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width:  60vmin;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.box{
+    height: 17vmin;
+    width: 17vmin;
+    border-radius: 1rem;
+    font-size: 4rem;
+    color: rgb(126, 56, 3);
+    border: none;
+    background-color: rgb(234, 234, 114);
+}
+
+.reset{
+    background-color: black;
+    color:white;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: none;
+}
+
+
+.newGame{
+    background-color: black;
+    color:white;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: none;
+}
+
+#msg{
+    color: rgb(234, 234, 114);
+    font-size: 8vmin;
+}
+
+.winnerMag{
+    margin-bottom: 40vmin;
+}
+
+.hide{
+    display: none;
+}
