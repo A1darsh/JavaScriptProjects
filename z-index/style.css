@@ -52,7 +52,7 @@
 
 
 /* ---postion----
-relative - it will move from its own location according to top and left properties
+relative - it will move from its own location according to top and left properties or it wil  move according to its parent
 absolute - it will search its parent if its parent is relative then it will move accrodingly 
 otherwise it will move according to view port
 fixed - fixed not move 
@@ -61,5 +61,5 @@ sticky - fixed to div as soon as div crosses then it will move
 
 
 /* Z-index 
-
+  for z index position should be absolute 
 */
