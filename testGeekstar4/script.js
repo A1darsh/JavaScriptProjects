@@ -26,10 +26,7 @@ function displayPhones(phones) {
             <h2>${phone.phone_name}</h2>
             <p>Brand: ${phone.brand}</p>
             <img src="${phone.image}" alt="${phone.phone_name}" class="phoneImage">
-            <button class="showDetailsButton">Show Details</button>
-            <div class="phoneDetails" style="display: none;">
-                <!-- Additional phone details will be displayed here -->
-            </div>
+            <button class="showDetailsButton">Show Details</button>   
         `;
     const showDetailsButton = phoneCard.querySelector(".showDetailsButton");
     showDetailsButton.addEventListener("click", () => {
@@ -51,7 +48,6 @@ function showPhoneDetails(phone) {
         <img src="${phone.image}" alt="${phone.phone_name}" class="phoneImage">
         <p>Brand: ${phone.brand}</p>
         <p>Slug: ${phone.slug}</p>
-        <!-- Add other phone details here as needed -->
         <button class="closeButton">Close</button>
     `;
 
@@ -77,3 +73,4 @@ window.onload = async () => {
   const phones = await fetchPhones();
   displayPhones(phones);
 };
+
