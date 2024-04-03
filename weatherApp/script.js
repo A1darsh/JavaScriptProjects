@@ -34,10 +34,30 @@ async function featchData(inputValue){
 
 searchBtn.addEventListener('click',()=>{
     let inputValue = input.value;
+    fetchCat();
     featchData(inputValue);
     input.value ="";
+
 })
 
+
+async function fetchCat(){
+    let response = await fetch(`https://api.thecatapi.com/v1/images/0XYvRd7oD`);
+
+    let data = await response.json();
+    let url = data.url;
+    let bread = data.breeds[0].name;
+
+    let main = document.querySelector(".main");
+    main.style.backgroundImage = `url(${url})`;
+    main.style.backgroundRepeat = "no-repeat";
+    main.style.backgroundSize = "cover";
+
+    console.log(main);
+    console.log(url , bread);
+    console.log(data)
+    
+}
 
 
 
